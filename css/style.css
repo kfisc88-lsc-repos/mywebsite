@@ -17,19 +17,8 @@ body {
 }
 
 /*______________________________ Header Styles ______________________________*/
-.slideshow h1 {
-  position: absolute;
-  z-index: 1;
-  top: 40px;
-  left: 75px;
-  padding: 0;
-  margin: 0;
 
-  /* background-color: white; */
-  font-size: 3em;
-  color: white;
-  text-shadow: 3px 3px 5px black;
-}
+
 
 /*__________________________ Navigation Bar Styles __________________________*/
 .horizontal {
