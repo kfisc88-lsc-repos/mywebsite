@@ -1,24 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=El+Messiri&display=swap');
-/*
+
 * {
   border: 1px solid red;
-} */
+}
 
 /*____________________________ HTML/Body Styles ____________________________*/
 html {
   font-family: 'El Messiri', sans-serif;
+  background-color: grey;
 }
 
 body {
-  max-width: 960px;
-  min-width: 480px;
+  background-color: white;
+  /* max-width: 960px;
+  min-width: 480px; */
   height: 100vh;
   margin: 0 auto;
 }
 
 /*______________________________ Header Styles ______________________________*/
+header h1 {
+  margin: 0;
+  padding: 15px 0 0 0;
+  border-right: 1px solid black;
+}
 
-
+header {
+  padding-left: 15%;
+  padding-right: 15%;
+}
 
 /*__________________________ Navigation Bar Styles __________________________*/
 .horizontal {
@@ -60,33 +70,45 @@ body {
 
 /*________________________________ Slideshow ________________________________*/
 .slideshow {
-  position: relative;
+  /* position: relative; */
+  width: 100%;
+  -webkit-display: flex;
+  display: flex;
 }
 
-.slideshow img {
-  position: absolute;
+.slideshow-img {
+  flex: 1 1 auto;
+}
+
+.slideshow-img img {
   width: 100%;
 }
 
 
 /*______________________________ Aside Styles ______________________________*/
 .slideshow aside {
-  width: 20vw;
-  background-color: white;
-  padding-right: 0;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  flex: 1 1 auto;
 }
 
 
 /*_______________________________ Form Styles _______________________________*/
-.login {
+ .login {
   padding: 10px;
-  box-shadow: -5px 5px 10px grey;
 }
 
 .login input {
   margin-bottom: 5px;
   width: 100%;
+}
+
+
+/*__________________________________ Grid __________________________________*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+
+.grid-container div {
+  text-align: center;
 }
