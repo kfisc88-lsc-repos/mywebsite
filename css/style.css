@@ -1,38 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=El+Messiri&display=swap');
 
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 /*____________________________ HTML/Body Styles ____________________________*/
 html {
   font-family: 'El Messiri', sans-serif;
-  background-color: grey;
+  background-color: rgb(200, 200, 200);
 }
 
 body {
   background-color: white;
-  /* max-width: 960px;
-  min-width: 480px; */
   height: 100vh;
   margin: 0 auto;
 }
 
 /*______________________________ Header Styles ______________________________*/
 header h1 {
-  margin: 0;
+  margin: 5px 0 0 0;
   padding: 15px 0 0 0;
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(200, 200, 200);
 }
 
 header {
-  padding-left: 15%;
-  padding-right: 15%;
+  box-shadow: 0px 3px 5px grey;
+  margin-bottom: 6px;
 }
+
 
 /*__________________________ Navigation Bar Styles __________________________*/
 .horizontal {
-  padding: 0;
+  padding: 0 20%;
   margin: 0;
 }
 
@@ -70,18 +69,70 @@ header {
 
 /*________________________________ Slideshow ________________________________*/
 .slideshow {
-  /* position: relative; */
-  width: 100%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-display: flex;
   display: flex;
 }
 
 .slideshow-img {
+  position: relative;
   flex: 1 1 auto;
 }
 
 .slideshow-img img {
   width: 100%;
+}
+
+.headline {
+  position: absolute;
+  top: 50px;
+}
+
+.headline h1 {
+  background-color: rgba(50, 50, 50, 0.9);
+  color: white;
+  padding: 3px 5px 3px 100px;
+  margin: 0;
+}
+
+.sub-headline {
+  position: absolute;
+  top: 125px;
+  left: 0;
+  padding-top: 0px;
+  padding-left: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sub-headline h2 {
+  margin-top: 0;
+  padding: 5px;
+  margin-bottom: 0;
+}
+
+.slideshow-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slideshow-button button {
+  font-family: 'El Messiri', sans-serif;
+  /* font-weight: bold; */
+  font-size: 1.4em;
+  color: white;
+  padding: 15px 5px;
+  background-color: rgba(50, 100, 150, 0.8);
+  border-radius: 10px;
+  border-style: none;
+}
+
+.slideshow-button button:hover {
+  background-color: rgba(75, 125, 175, 0.8);
+  color: #55FFFF;
 }
 
 
@@ -105,6 +156,9 @@ header {
 /*__________________________________ Grid __________________________________*/
 .grid-container {
   display: grid;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
 }
