@@ -7,11 +7,12 @@
 /*____________________________ HTML/Body Styles ____________________________*/
 html {
   font-family: 'El Messiri', sans-serif;
-  background-color: rgb(200, 200, 200);
+  color: #292f36;
+  background-color: #f7fff7;
 }
 
 body {
-  background-color: white;
+  background-color: #f7fff7;
   height: 100vh;
   margin: 0 auto;
 }
@@ -20,12 +21,14 @@ body {
 header h1 {
   margin: 5px 0 0 0;
   padding: 15px 0 0 0;
-  border-right: 1px solid rgb(200, 200, 200);
+  color: #f7fff7;
+  border-right: 1px solid #f7fff7;
 }
 
 header {
-  box-shadow: 0px 3px 5px grey;
+  box-shadow: 0px 3px 5px #6e7271;
   margin-bottom: 6px;
+  background-color: #384d48;
 }
 
 
@@ -57,27 +60,28 @@ header {
 }
 
 .horizontal a:link, .horizontal a:visited {
-  color: black;
+  color: #f7fff7;
   text-decoration: none;
 }
 
 .horizontal a:hover, .horizontal a:active {
-  color: white;
-  background-color: red;
+  color:  #292f36;
+  background-color: #6e7271;
 }
 
 
 /*________________________________ Slideshow ________________________________*/
 .slideshow {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
   -webkit-display: flex;
   display: flex;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slideshow-img {
   position: relative;
+  -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
@@ -87,64 +91,57 @@ header {
 
 .headline {
   position: absolute;
-  top: 50px;
-}
-
-.headline h1 {
-  background-color: rgba(50, 50, 50, 0.9);
-  color: white;
-  padding: 3px 5px 3px 100px;
+  top: 10%;
   margin: 0;
+  padding: 3px 5px 3px 2vw;
+  font-size: 3vw;
+  color: #f7fff7;
+  background-color: rgba(110, 114, 113, 0.8);
 }
 
 .sub-headline {
   position: absolute;
-  top: 125px;
+  top: 30%;
   left: 0;
-  padding-top: 0px;
-  padding-left: 25px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.sub-headline h2 {
-  margin-top: 0;
-  padding: 5px;
-  margin-bottom: 0;
+  padding: 0 0 0 2vw;
+  font-size: 2vw;
+  border-bottom: 1px solid #292f36;
 }
 
 .slideshow-button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
 }
 
 .slideshow-button button {
   font-family: 'El Messiri', sans-serif;
-  /* font-weight: bold; */
-  font-size: 1.4em;
-  color: white;
+  font-size: 2vw;
+  font-weight: bold;
   padding: 15px 5px;
-  background-color: rgba(50, 100, 150, 0.8);
-  border-radius: 10px;
+  background-color: rgba(219, 84, 97, 0.7);
+  border-radius: 20px;
   border-style: none;
 }
 
 .slideshow-button button:hover {
-  background-color: rgba(75, 125, 175, 0.8);
-  color: #55FFFF;
+  background-color: rgba(247, 255, 247, 0.8);
+  color: #db5461;
 }
 
 
 /*______________________________ Aside Styles ______________________________*/
 .slideshow aside {
   flex: 1 1 auto;
+  font-size: 0.8em;
+  width: 100%;
 }
 
 
 /*_______________________________ Form Styles _______________________________*/
  .login {
-  padding: 10px;
+  padding: 2vw;
 }
 
 .login input {
@@ -156,7 +153,8 @@ header {
 /*__________________________________ Grid __________________________________*/
 .grid-container {
   display: grid;
-  width: 60%;
+  width: 80%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   grid-template-columns: auto auto auto;
@@ -165,4 +163,9 @@ header {
 
 .grid-container div {
   text-align: center;
+}
+
+.grid-container img {
+  width: 100%;
+  box-shadow: -1px 1px 5px grey;
 }
