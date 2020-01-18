@@ -118,8 +118,8 @@ header {
 .slideshow-button button {
   font-family: 'El Messiri', sans-serif;
   font-size: 2vw;
-  font-weight: bold;
   padding: 15px 5px;
+  color: #f7fff7;
   background-color: rgba(219, 84, 97, 0.7);
   border-radius: 20px;
   border-style: none;
